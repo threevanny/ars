@@ -1,0 +1,18 @@
+---
+- name: Update DB server
+  host: ansible_clients
+  remote_user: root
+  become: true
+  vars:
+    mysql_root_password: "password"
+  
+  tasks:
+  - name: Install mariadb
+    yum:
+      name: 
+        - mariadb-server
+      state: latest
+  - name: Start mariadb
+    service:
+      name: mariadb
+      state: started

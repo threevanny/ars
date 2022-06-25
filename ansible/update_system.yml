@@ -1,0 +1,10 @@
+---
+- name: Update System Book
+  hosts: ansible_clients
+  remote_user: root
+  become: true
+  tasks:
+    - name: update system
+      yum:
+        name: '*'
+        state: latest
