@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: hades_server
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - role: robertdebock.dns
+      dns_port: 5353
