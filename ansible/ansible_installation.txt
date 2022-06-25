@@ -1,0 +1,5 @@
+$ yum install vim
+$ yum install net-tools
+$ yum install epel-next-release
+$ yum install ansible ansible-core
+$ dnf install rhel-system-roles

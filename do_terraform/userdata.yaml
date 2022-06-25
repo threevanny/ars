@@ -1,0 +1,7 @@
+#Droplet Config
+package_update: true
+packages:
+  - epel-next-release
+  - ansible
+  - ansible-core
+  - rhel-system-roles
